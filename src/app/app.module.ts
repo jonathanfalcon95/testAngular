@@ -9,20 +9,22 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
+
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { ServicesComponent } from './services/services.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     AppRoutingModule,
     HttpClientModule,
     NgxPaginationModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

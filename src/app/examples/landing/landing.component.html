@@ -19,7 +19,43 @@
                 
             </div>
         </div> 
-        <br/><br/>
+        <br/>
+        
+        <div class="section" id="carousel">
+            <div class="container">
+                <div class="tim-title">
+                    <h3>
+                        Destinations</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 mr-auto ml-auto">
+                        <div class="card page-carousel">
+                            <ngb-carousel>
+                                <ng-template ngbSlide>
+                                    <img src="../../../assets/img/soroush-karimi.jpg" alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Spain</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="../../../assets/img/federico-beccari.jpg" alt="Random second slide">
+                                    <div class="carousel-caption">
+                                        <p>Italy</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="../../../assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                    <div class="carousel-caption">
+                                        <p>France</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
         <div class="row">   
             <div *ngFor="let item of posts  | paginate: config" class="col-md-4">
                     <div class="card" style="width: 18rem;">

@@ -19,7 +19,7 @@ export class LandingComponent implements OnInit {
     this.items = ['London', 'Madrid', 'Barcelona', 'Paris', 'example', 'example'];
 
     this.config = {
-      itemsPerPage: 5,
+      itemsPerPage: 9,
       currentPage: 1,
       totalItems: this.collection.count
     };
